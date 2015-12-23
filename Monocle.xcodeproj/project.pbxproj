@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		663B6B5F1C2B5F4F0010AB87 /* Monocle.h in Headers */ = {isa = PBXBuildFile; fileRef = 663B6B5E1C2B5F4F0010AB87 /* Monocle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		663B6B671C2B5F780010AB87 /* Monocole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663B6B661C2B5F780010AB87 /* Monocole.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		663B6B5B1C2B5F4F0010AB87 /* Monocle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Monocle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		663B6B5E1C2B5F4F0010AB87 /* Monocle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monocle.h; sourceTree = "<group>"; };
 		663B6B601C2B5F4F0010AB87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		663B6B661C2B5F780010AB87 /* Monocole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monocole.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				663B6B5E1C2B5F4F0010AB87 /* Monocle.h */,
 				663B6B601C2B5F4F0010AB87 /* Info.plist */,
+				663B6B661C2B5F780010AB87 /* Monocole.swift */,
 			);
 			path = Monocle;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663B6B671C2B5F780010AB87 /* Monocole.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +232,7 @@
 		663B6B641C2B5F4F0010AB87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -238,12 +243,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.Monocle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		663B6B651C2B5F4F0010AB87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
